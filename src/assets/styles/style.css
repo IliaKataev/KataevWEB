@@ -45,19 +45,6 @@
     opacity: 0.4;
 }
 
-/*стиль для отправки формы */
-.submit-button {
-    background: #5A98D0 !important;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF !important;
-    text-transform: uppercase;
-}
-
 /*изображение и стиль для формы*/
 .contact-form {
     background-image: url('/src/background.jpg');
@@ -66,5 +53,67 @@
     padding: 20px;
     border-radius: 10px;
     color: white;
+}
 
+/*стиль для отправки формы */
+.submit-button {
+    background: linear-gradient(to right, #608aea, #8d55e9);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/*стиль для хэдера */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #608aea, #8d55e9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/*хлебные крошки*/
+.breadcrumb {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+}
+
+/*отступ для элементов хлебных крошек*/
+.breadcrumb li {
+    margin-right: 10px;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*при наведении*/
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+/*не мое, но нашел, как можно "обозвать" элемент для "|" */
+.breadcrumb li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 50px;
 }
