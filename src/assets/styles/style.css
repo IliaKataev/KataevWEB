@@ -1,11 +1,99 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
+@import "../styles/global.css";
+@import "../styles/fonts.css";
+@import "../styles/utils.css";
 
-.test {
-    color: yellow !important;
+/*хэдер*/
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    background-color: #BB353B;
+
 }
 
-.test {
-    color: red !important;
+.site-header .logo {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.topnav {
+    display: flex;
+    gap: 30px;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.intro-article {
+    position: relative;
+    text-align: center;
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.subscription-form {
+    background: url("/src/assets/img/subscription-form.webp") center center / cover no-repeat;
+    padding: 20px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.subscription-form label,
+.subscription-form input,
+.subscription-form button {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section-image {
+    height: 450px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-button {
+    background: linear-gradient(to right, #608aea, #8d55e9);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/*стиль для инпута*/
+.input-field {
+    border: 1px solid #356EAD !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+/*изображение и стиль для формы*/
+.contact-form {
+    background-image: url('/src/assets/img/contactform.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
 }
