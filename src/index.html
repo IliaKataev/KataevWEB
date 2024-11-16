@@ -1,22 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="IT-website"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Website</title>
     <link rel="stylesheet" href="/src/assets/styles/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-
 </head>
 
 <body>
     <header class="navbar">
         <a class="logo" href="#">IT WEBSITE</a>
         <nav>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Media</a></li>
                 <li><a href="#">Cases</a></li>
@@ -26,52 +23,61 @@
         </nav>
         <div class="contact-info">
             <i class="fas fa-phone"></i> +7 (111) 111 11 11
-            <i style="margin-left: 20px"></i> +7 (111) 111 11 11
+            <i style="margin-left: 15"></i> +7 (111) 111 11 11
             <i class="fas fa-envelope" style="margin-left: 20px;"></i> itcompany@mail.com
         </div>
     </header>
+
     <main>
-        <!-- Основное содержимое страницы -->
+        <section class="main-section">
+            <article class="main-page-info">
+                <h1>Development of <span class="highlight">mobile</span> <span class="highlight">applications</span> and
+                    <span class="highlight">web services</span> of any complexity
+                </h1>
+                <p>We create mobile applications for iOS, Android that transfer your business to mobile applications of
+                    your customets' devices.</p>
+            </article>
+
+            <div class="form-container">
+                <p>Leave your contacts, and we will call you back within 30 minutes</p>
+                <form>
+                    <div>
+                        <label for="phone">Phone number</label>
+                        <input type="text" placeholder="Enter your phone number" class="input-field" required>
+                    </div>
+
+                    <div>
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" placeholder="Enter your name" class="input-field" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Get consultation</button>
+                </form>
+            </div>
+        </section>
     </main>
-
-    <section>
-        <article></article>
-
-        <article></article>
-
-    </section>
-
 
     <footer class="footer">
         <h2>IT WEBSITE</h2>
         <div class="footer-content">
-            <div>
-                <div class="icon">
-                    <i class="fas fa-phone"> </i> Contact nums
-                </div>
+            <div class="icon">
+                <i class="fas fa-phone"></i> Contact nums
                 <div>+7 (778) 395 90 26</div>
             </div>
-            <div>
-                <div class="icon">
-                    <i class="fas fa-envelope"> </i> Post
-                </div>
+            <div class="icon">
+                <i class="fas fa-envelope"></i> Post
                 <div>mail@mail.com</div>
             </div>
-            <div>
-                <div class="icon">
-                    <i class="fas fa-map-marker-alt"> </i> Address
-                </div>
-                <div>City city, steet st. 90</div>
+            <div class="icon">
+                <i class="fas fa-map-marker-alt"></i> Address
+                <div>City, Street, 90</div>
             </div>
-            <div>
-                <div class="icon">
-                    <i class="fas fa-file-alt"> </i> Leave a request
-                </div>
-                <div>Leave a request</div>
+            <div class="icon">
+                <i class="fas fa-file-alt"></i> Leave a request
+                <div>Submit your inquiry</div>
             </div>
         </div>
-        <div class="icon" style="margin-top: 20px;">
-            <i class="fas fa-globe"> </i> We work throughout world
+        <div class="footer-bottom">
+            <i class="fas fa-globe"></i> We work worldwide
         </div>
     </footer>
 </body>
