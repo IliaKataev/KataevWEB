@@ -1,11 +1,105 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
-
-.test {
-    color: yellow !important;
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
-.test {
-    color: red !important;
+header.navbar {
+    position: fixed;
+    top: 10px;
+    /* Отступ сверху от верхнего края страницы */
+    left: 50px;
+    /* Отступ слева */
+    right: 50px;
+    /* Отступ справа */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    /* Закругленные углы */
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+header nav ul.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul.nav-links li {
+    margin: 0 10px;
+}
+
+header nav ul.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+header .contact-info {
+    display: flex;
+    align-items: center;
+}
+
+header .contact-info i {
+    margin-right: 5px;
+}
+
+main {
+    margin-top: 90px;
+    /* Отступ для фиксированного header */
+    min-height: calc(100vh - 190px);
+    /* Высота страницы без header и footer */
+}
+
+footer.footer {
+    position: fixed;
+    bottom: 10px;
+    /* Отступ снизу от нижнего края страницы */
+    left: 50px;
+    /* Отступ слева */
+    right: 50px;
+    /* Отступ справа */
+    background-color: #0a0e27;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    /* Закругленные углы */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-content div {
+    margin: 10px;
+    text-align: left;
+}
+
+footer .footer-content .icon {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-content .icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
