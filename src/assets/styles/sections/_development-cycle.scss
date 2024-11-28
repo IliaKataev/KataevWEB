@@ -1,0 +1,55 @@
+.development-cycle {
+    background-color: white;
+    margin-top: 0px;
+  
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  
+    .content {
+      display: flex;
+      justify-content: space-between;
+  
+      .left, .right {
+        width: 48%;
+      }
+  
+      .right {
+        margin: 25px 0 25px 0;
+  
+        ul {
+          list-style: none;
+          padding: 0;
+  
+          li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+  
+            a {
+              text-decoration: none;
+              color: #000;
+              font-weight: 400;
+              margin-right: 5px;
+  
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: #add8e6;
+                font-weight: bold;
+                color: #000;
+              }
+            }
+  
+            &::after {
+              content: ">";
+              color: #007bff;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
