@@ -2,7 +2,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f5f7fa;
-  max-width: 1440px;
+  max-width: auto;
   height: 100%;
 }
 
@@ -204,10 +204,16 @@ header .menu-icon:active .mobile-menu_content {
   background-color: white;
   margin-top: 0px;
 }
-.development-cycle h2 {
-  font-size: 30px;
+.development-cycle h1 {
+  font-size: 36px;
   font-weight: 700;
-  margin-bottom: 20px;
+  line-height: 51.84px;
+  letter-spacing: 0.3264510036px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin-bottom: 40px;
 }
 .development-cycle .content {
   display: flex;
@@ -216,14 +222,52 @@ header .menu-icon:active .mobile-menu_content {
 .development-cycle .content .left, .development-cycle .content .right {
   width: 48%;
 }
+.development-cycle .content .left {
+  display: flex;
+  flex-direction: column;
+}
+.development-cycle .content .left h3 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.3799999952px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.development-cycle .content .left .dev-cycle_title {
+  margin-bottom: 34px;
+}
+.development-cycle .content .left .dev-cycle_title p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.2399999946px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 0;
+}
+.development-cycle .content .left .two_types {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  gap: 32px;
+}
 .development-cycle .content .right {
   margin: 25px 0 25px 0;
 }
 .development-cycle .content .right ul {
   list-style: none;
   padding: 0;
+  gap: 12px;
 }
 .development-cycle .content .right ul li {
+  padding: 12px 0 12px 0;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -231,8 +275,12 @@ header .menu-icon:active .mobile-menu_content {
 .development-cycle .content .right ul li a {
   text-decoration: none;
   color: #000;
-  font-weight: 400;
   margin-right: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3799999952px;
+  text-align: left;
 }
 .development-cycle .content .right ul li a:hover {
   text-decoration: underline;
@@ -428,4 +476,279 @@ header .menu-icon:active .mobile-menu_content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.projects h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 51.84px;
+  letter-spacing: 0.3264510036px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 0;
+}
+.projects .projects-header {
+  width: 50%;
+}
+.projects .projects-lists {
+  margin-top: 40px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 25px;
+}
+.projects .theme-left, .projects .theme-center, .projects .theme-right {
+  width: 33%;
+}
+.projects .theme-left ul, .projects .theme-center ul, .projects .theme-right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+}
+.projects .theme-left li, .projects .theme-center li, .projects .theme-right li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.4079999924px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.projects .icon-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.projects .white-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 5px;
+  border-radius: 100px;
+  background-color: white;
+}
+.projects .white-circle img {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-self: center;
+}
+.projects .project-example .project-text_container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 24px;
+  margin-bottom: 40px;
+  padding: 0 0 14px 0;
+}
+.projects .project-example .project-text_container p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.2399999946px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 0;
+}
+.projects .I-teka .I-teka_container {
+  display: flex;
+  flex-direction: row;
+}
+.projects .I-teka .I-teka_container nav {
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.projects .I-teka .I-teka_container a {
+  font-size: 18px;
+  margin: 15px;
+  padding: 4px;
+}
+.projects .I-teka .I-teka_container a:hover {
+  text-decoration: underline;
+  text-decoration-color: #7dd2ee;
+  color: #000;
+}
+.projects .I-teka .I-teka_container .button_I-teka {
+  display: grid;
+  width: 30%;
+  align-self: center;
+}
+.projects .I-teka .I-teka_container .button_I-teka button {
+  justify-self: center;
+  padding: 10px;
+  margin: 9px 0 9px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-content: flex-start;
+  line-height: 1.5;
+  white-space: normal;
+}
+.projects .I-teka .I-teka_main {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 40px;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2399999946px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0px;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc nav a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc nav a:not(:last-child)::after {
+  content: "/";
+  align-items: center;
+  margin: 0 8px;
+  color: #2d66ee;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc nav a a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc nav a a:hover {
+  color: #0056b3;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc nav a.active {
+  font-weight: bold;
+  color: #555;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc nav a.active a {
+  pointer-events: none;
+  color: inherit;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .icons-labels {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .icons-labels .image_i-teka_wrapper {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-self: center;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .icons-labels p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2399999946px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .icons-labels .kazah, .projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .icons-labels .medicine {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .icons-labels .kazah img {
+  width: 16px;
+  height: 20px;
+  align-self: center;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .icons-labels .medicine img {
+  width: 20px;
+  height: 18px;
+  align-self: center;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .user-numbers {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .user-numbers .user_growth, .projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .user-numbers .active_users {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .user-numbers .user_growth .numbers, .projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .user-numbers .active_users .numbers {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.3264510036px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 0;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .user-numbers .user_growth .numbers-label, .projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .user-numbers .active_users .numbers-label {
+  color: #667085;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.0780000016px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 0;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .store-images {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .store-images .AppStore, .projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .store-images .GooglePlay {
+  border: none;
+  border-radius: 10px;
+  padding-inline: 0px;
+}
+.projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .store-images .AppStore img, .projects .I-teka .I-teka_main .I-teka_main-info .I-teka_main-info-desc .store-images .GooglePlay img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.projects .I-teka .I-teka_main .I-teka_main-img {
+  justify-self: center;
+  width: 50%;
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */
