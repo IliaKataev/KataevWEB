@@ -2,8 +2,8 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f5f7fa;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   position: absolute;
 }
 
@@ -234,6 +234,7 @@ header .menu-icon:focus .mobile-menu_content {
 .development-cycle .content {
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
 }
 .development-cycle .content .left, .development-cycle .content .right {
   width: 48%;
@@ -374,6 +375,7 @@ header .menu-icon:focus .mobile-menu_content {
 }
 .projects .projects-header {
   width: 50%;
+  margin-top: 30px;
 }
 .projects .projects-lists {
   margin-top: 40px;
@@ -1253,6 +1255,7 @@ header .menu-icon:focus .mobile-menu_content {
   }
   .development-cycle .content {
     gap: 83px;
+    padding-top: 0;
   }
   .development-cycle .left {
     margin-left: 40px;
@@ -1789,6 +1792,7 @@ header .menu-icon:focus .mobile-menu_content {
   .development-cycle .content {
     gap: 32px;
     flex-direction: column;
+    padding-top: 0;
   }
   .development-cycle .left {
     margin-left: 17px;

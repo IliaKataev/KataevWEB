@@ -196,7 +196,8 @@
     }
 
     .content{
-      gap: 83px
+      gap: 83px;
+      padding-top: 0;
     }
 
     .left{
@@ -872,6 +873,7 @@
     .content{
       gap: 32px;
       flex-direction: column;
+      padding-top: 0;
     }
 
     .left{
