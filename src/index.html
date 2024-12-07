@@ -10,32 +10,9 @@
 </head>
 
 <body>
+
     <header>
-        <div class="menu-icon">
-            <i class="fas fa-bars menu-icon"></i>
-            <div class="mobile-menu_content">
-                <div class="mobile-menu_wrapper">
-                    <div class="mobile-menu_cross">
-                        <img src="\src\assets\icons\close.png" alt="close">
-                    </div>
-                    <div class="mobile-menu_logo">
-                        <img src="/src/assets/icons/itweb.png" alt="logo">
-                    </div>
-                    <nav class="mobile-menu_menu">
-                        <a href="#" class="mobile-menu_menu-item">Services</a>
-                        <a href="#" class="mobile-menu_menu-item"> Media</a>
-                        <a href="#" class="mobile-menu_menu-item"> Cases</a>
-                        <a href="#" class="mobile-menu_menu-item"> FAQ</a>
-                        <a href="#" class="mobile-menu_menu-item"> Contacts</a>
-                    </nav>
-                    <div class="mobile-menu_contact-info">
-                        <a href="#" class="mobile-phones"></i> +7 (111) 111 11 11</a>
-                        <a href="#" class="mobile-phones">+7 (111) 111 11 11</a>
-                        <a href="#" class="mobile-email">itcompany@mail.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <img src="/src/assets/icons/burger.png" alt="" id="burger-icon">
 
         <div class="logo">IT WEBSITE</div>
         <nav>
@@ -55,6 +32,32 @@
             </div>
         </div>
     </header>
+
+    <div class="menu-overlay" id="menu-overlay">
+        <div class="menu-content">
+            <span id="close-menu" class="close-icon">&times;</span>
+            <div class="logo">IT WEBSITE</div>
+            <nav>
+                <a href="#">Services</a>
+                <a href="#">Media</a>
+                <a href="#">Cases</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contacts</a>
+            </nav>
+            <div class="contact-info">
+                <div class="phones">
+                    <a href="#"><i class="fas fa-phone-alt"></i> +7 (111) 111 11 11</a>
+                    <a href="#">+7 (111) 111 11 11</a>
+                </div>
+                <div class="email">
+                    <a href="#"><i class="fas fa-envelope"></i> itcompany@mail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/index.js"></script>
+
     <main>
         <section class="intro">
 

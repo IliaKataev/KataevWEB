@@ -12,11 +12,17 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     z-index: 1000;
+
+    img{
+      display: none;
+    }
   }
 
     header .menu-icon:active {
     .mobile-menu_content {
         display: block;
     }
+
+    
 }
   
