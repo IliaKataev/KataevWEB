@@ -1,34 +1,51 @@
 .intro {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 0 0 0 108px;
   position: relative;
   overflow: hidden;
+  width: 1440px;
+  height: 900px;
+
+  
 
   .text {
-    margin-top: 135px;
+    margin-top: 164px;
     width: 50%;
 
     h1 {
       font-size: 36px;
       font-weight: 700;
-      margin-bottom: 20px;
-      width: 90%;
+      margin-bottom: 24px;
+      line-height: 51px;
+      width: 80%;
     }
   }
+  
+  .aaa{
+    position: relative;
+    width: 709px;
+    height: 900px;
+    left: -108px;
+    overflow: hidden;
+  } 
+
 
   .images {
     position: absolute; /* Убираем из потока */
-    top: 0;
-    right: -250px;
+    top: -100px;
+    right: -120px;
     bottom: 0;
     width: 50%;
+    width: 656px;
     height: 1960px;
     display: flex;
     justify-content: space-between;
-    z-index: -1;
-    transform: rotate(-15deg);
+    z-index: -1000;
+    transform: rotate(-12deg);
+    clip-path: inset(0 0 0 0);
+    
+
 
     .image-container-first, .image-container-second {
       position: absolute;
@@ -74,6 +91,6 @@
 
 .intro .text p {
   font-size: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 64px;
   width: 90%;
 }

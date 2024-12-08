@@ -2,6 +2,10 @@
     background-color: white;
     margin-top: 0px;
     overflow: hidden;
+    width: 1440px;
+    height: 500px;
+
+
   
     h1 {
       font-size: 36px;
@@ -65,7 +69,9 @@
       }
   
       .right {
+        position: relative;
         margin: 25px 0 25px 0;
+        top: -20px;
   
         ul {
           list-style: none;

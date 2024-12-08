@@ -39,8 +39,11 @@
       }
     }
   }
-    
+  .footer-cont{
+    width: 768px;
+  }
   .footer {
+    width: 768px;
     margin: 0;
     padding: 46px 21px 37px 21px;
 
@@ -67,10 +70,11 @@
   .intro{
     margin: 0px 0px 0 33px;
     overflow: hidden;
+    width: 768px;
 
     .text{
       padding-top: 138px !important;
-      width:50% !important;
+      width:60% !important;
       margin-top:0;
 
       h1{
@@ -167,6 +171,7 @@
   /////////////////////////////////////
   
   .development-cycle{
+    width: 768px;
     h1{
       font-size: 28px;
       font-weight: 700;
@@ -245,6 +250,8 @@
 ///////////////////////////////////////
   
   .our-team{
+    width: 768px;
+    height: 884px;
     flex-direction: column !important;
 
     padding: 38px 34px 52px 30px;
@@ -299,10 +306,13 @@
 //////////////////////////////////////
 /// 
   .projects, .container{
+    width: 768px;
+    height: 1368px;
     margin: 0 !important;
     padding: 0;
   }
   .projects{
+    width: 768px;
 
     
 
@@ -317,9 +327,43 @@
       margin: 29px 0 0 33px;
     }
 
-    .projects-lists{
+    .projects-lists {
       margin: 32px 36px 44px 33px !important;
-      gap: 15px;
+      display: grid; // Используем grid для родителя
+      grid-template-columns: 1fr 1fr; // Два столбца
+      gap: 20px;
+      grid-auto-rows: min-content; // Размер строки автоматически подстраивается под контент
+      grid-auto-flow: row dense;
+  
+      // Убираем контейнеры theme-left, theme-center, theme-right из потока
+      .theme-left,
+      .theme-center,
+      .theme-right {
+        display: contents; // Делаем их прозрачными для grid
+      }
+  
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: contents;
+
+        .icon-list {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 15px;
+    
+          // Применяем для нечётных элементов первый столбец
+          &:nth-of-type(1), &:nth-of-type(2) {
+            grid-column: 1; // Первый столбец
+          }
+    
+          &:nth-of-type(9), &:nth-of-type(10), &:nth-of-type(11), &:nth-of-type(12), &:nth-of-type(13), &:nth-of-type(14), &:nth-of-type(15) {
+            grid-column: 2; // Второй столбец
+          }
+        }
+      }
     }
 
 
@@ -458,6 +502,7 @@
   }
 ////////////////////////////////////////
   .get-book{
+    width: 768px;
 
     .main_get-book{
       justify-content: space-evenly !important;
@@ -513,6 +558,8 @@
   }
   ////////////////////////////////////////
   .discussion-cont{
+    width: 768px;
+    height: 428px;
 
     .disc-container{
       padding:22px 144px 32px 38px !important;
@@ -566,6 +613,8 @@
   ////////////////////////////////////////
   
   .app-dev-stages{
+    width: 768px;
+    height: 1300px;
     margin: 0;
     padding: 32px 53px 32px 42px !important;
 
@@ -633,6 +682,7 @@
   ////////////////////////////////////////
 
   .FAQ{
+    width: 768px;
     .FAQ-container{
       padding: 22px 77px 32px 36px;
 
@@ -695,6 +745,10 @@
 
   }
 
+  .footer-cont{
+    width: 426px;
+  }
+
   .footer {
     margin: 0;
     padding: 46px 21px 37px 21px;
@@ -740,6 +794,8 @@
     left: -8px;
     gap: 0px;
     opacity: 0px;
+    width: 426px;
+    height: 1267px;
 
 
     .text{
@@ -771,7 +827,7 @@
 
       .form{
         position: relative;
-        width: 382px;
+        width: 412px;
         height: auto;
         border-radius: 12px 12px 12px 12px;
         padding: 32px 55px 32px 32px;
@@ -847,6 +903,8 @@
   /////////////////////////////////////
   
   .development-cycle{
+    width: 426px;
+    height: 900px;
     h1{
       font-size: 28px;
       font-weight: 700;
@@ -999,8 +1057,11 @@
   .projects, .container{
     margin: 0 !important;
     padding: 0;
+    width: 426px;
+    height: 1670px;
   }
   .projects{
+    width: 426px;
 
     .projects-header{
       width: 100%;
@@ -1194,7 +1255,7 @@
   }
 ////////////////////////////////////////
   .get-book{
-    width: 428px;
+    width: 426px;
     height: 923px;
 
     .main_get-book{
@@ -1263,6 +1324,8 @@
   }
   ////////////////////////////////////////
   .discussion-cont{
+    width: 426px;
+    height: 559px;
 
     .disc-container{
       padding:34px 16px 55px 16px !important;
@@ -1328,6 +1391,8 @@
   ////////////////////////////////////////
   
   .app-dev-stages{
+    width: 426px;
+    height: 1400px;
     margin: 0;
     padding: 32px 32px 20px 16px !important;
 
@@ -1395,6 +1460,7 @@
   ////////////////////////////////////////
 
   .FAQ{
+    width: 426px;
     .FAQ-container{
       padding: 32px 16px 32px 16px;
 
@@ -1405,10 +1471,27 @@
 
         .FAQ-left{
           width: 100%;
+
+          .FAQ-box{
+            .faq{
+              p{
+                width: 90%;
+              }
+            }
+          }
         }
 
         .FAQ-right{
           width: 100%;
+
+          .FAQ-box{
+            .faq{
+              p{
+                width: 90%;
+              }
+            }
+          }
+
         }
       }
 

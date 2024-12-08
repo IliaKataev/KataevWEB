@@ -4,6 +4,10 @@
     flex-direction: column;
     background-color: white;
     padding: 80px 108px 80px 108px;
+    width: 1440px;
+    height: 810px;
+
+
 
     h1{
         width:50%;
@@ -23,12 +27,17 @@
         justify-content: space-between;
         align-items: flex-start;
 
-        
+        .right-align{
+            align-items: flex-end;
+        }
+
         .box{
             display: flex;
             flex-direction: column;
             gap:24px;
             width: 48%;
+
+           
             
             .box-item{
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -41,6 +50,7 @@
                     gap: 24px;
                     align-items: center;
                     padding: 24px 0 0 24px;
+                    margin-bottom: 16px;
 
                     img{
                         width: 48px;
