@@ -67,14 +67,18 @@
       margin-top: 32px;
     }
   }
-  .intro{
-    margin: 0px 0px 0 33px;
+  .intro{ 
+    margin: 0;
     overflow: hidden;
     width: 768px;
+    justify-content: unset;
+    height: 800px;
+    
 
     .text{
+      margin: 0px 0px 0 33px;
       padding-top: 138px !important;
-      width:60% !important;
+      width:55% !important;
       margin-top:0;
 
       h1{
@@ -85,6 +89,7 @@
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+        width: 100%;
       }
 
       p{
@@ -96,6 +101,7 @@
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         margin-bottom: 32px;
+        width: 85%;;
       }
 
       .form{
@@ -155,13 +161,19 @@
         }
 
       }
+    } 
+
+    .aaa{
+      left: 0;
+      width: 60%;
+      overflow: hidden;
     }
 
     .images{
-      width: 294.53px;
+      width: 354.53px;
       height: 933.13px;
-      top: -1.76px;
-      left: 490px;
+      top: -50.76px;
+      left: 70px;
       gap: 0px;
       border-radius: 24px 0px 0px 0px;
       opacity: 0px;
@@ -786,7 +798,7 @@
 
 
   .intro{ 
-    margin: 0px 0px 0 24px;
+    margin: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -799,6 +811,7 @@
 
 
     .text{
+      margin: 0px 0px 0 24px;
       padding-top: 138px !important;
       width:100% !important;
       margin-top:0;
@@ -885,6 +898,14 @@
         }
 
       }
+    }
+
+    .aaa{
+      width: 426px;
+      height: 725px;
+      top: -370px;
+      overflow: hidden;
+      left: 0;
     }
 
     .images{
