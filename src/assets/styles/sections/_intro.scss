@@ -1,7 +1,7 @@
 .intro {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 0 108px;
+  
   position: relative;
   overflow: hidden;
   width: 1440px;
@@ -10,6 +10,7 @@
   
 
   .text {
+    margin: 0 0 0 108px;
     margin-top: 164px;
     width: 50%;
 
@@ -26,8 +27,8 @@
     position: relative;
     width: 709px;
     height: 900px;
-    left: -108px;
-    overflow: hidden;
+    left: 0px;
+    overflow: unset;
   } 
 
 

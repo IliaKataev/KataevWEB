@@ -17,6 +17,7 @@
     border-radius: 24px 24px 24px 24px;
     left: 0;
     right: 0;
+
     
     img{
       display: block;
@@ -1434,6 +1435,10 @@
 
     .two-boxes{
       flex-direction: column !important;
+
+      .right-align{
+        align-items: flex-start;
+    }
 
       .box{
         width: 100% !important;

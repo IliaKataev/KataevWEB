@@ -131,13 +131,13 @@ header .menu-icon:focus .mobile-menu_content {
 .intro {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 0 108px;
   position: relative;
   overflow: hidden;
   width: 1440px;
   height: 900px;
 }
 .intro .text {
+  margin: 0 0 0 108px;
   margin-top: 164px;
   width: 50%;
 }
@@ -152,8 +152,8 @@ header .menu-icon:focus .mobile-menu_content {
   position: relative;
   width: 709px;
   height: 900px;
-  left: -108px;
-  overflow: hidden;
+  left: 0px;
+  overflow: unset;
 }
 .intro .images {
   position: absolute; /* Убираем из потока */
@@ -2287,6 +2287,9 @@ header .menu-icon:focus .mobile-menu_content {
   }
   .app-dev-stages .two-boxes {
     flex-direction: column !important;
+  }
+  .app-dev-stages .two-boxes .right-align {
+    align-items: flex-start;
   }
   .app-dev-stages .two-boxes .box {
     width: 100% !important;
