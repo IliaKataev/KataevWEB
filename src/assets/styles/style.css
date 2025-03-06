@@ -1,11 +1,178 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
-
-.test {
-    color: yellow !important;
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    font-family: Arial, sans-serif;
 }
 
-.test {
-    color: red !important;
+.left-column {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
 }
+
+.right-column {
+    flex: 1;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    gap: 15px;
+}
+
+.pizza-selection {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.toppings-selection {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pizza-item {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.pizza-item:hover {
+    background-color: #f0f0f0;
+}
+
+.pizza-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.topping-item {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.topping-item:hover {
+    background-color: #f0f0f0;
+}
+
+.topping-item img {
+    max-width: 80%;
+    height: auto;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.toggle {
+    position: relative;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #ff6600;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#orderButton {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#orderButton:hover {
+    background-color: #ff9900;
+}
+
+#orderButton.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.pizza-item.selected,
+.topping-item.selected {
+    border: 2px solid #ff6600;
+    background-color: #ffe5b3;
+}
+
+.pizza-item.selected:hover,
+.topping-item.selected:hover {
+    background-color: #ffd699;
+}
+
+.pizza-item.selected {
+    border: 3px solid orange;
+    background-color: #f8f8f8;
+}
+
+.pizza-item {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.pizza-item:hover {
+    background-color: #f0f0f0;
+}
+
+.pizza-item img {
+    max-width: 100%;
+    height: auto;
+}
+
